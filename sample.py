@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 # =========================
 
 def psnr(a, b):
-    # PSNR，測量重建影像品質（避免 mse=0 時直接回 100）。
+    # PSNR，測量重建影像品質（我寫報告的時候方便比較）。
     a = a.astype(np.float32)
     b = b.astype(np.float32)
     mse = np.mean((a - b) ** 2)
